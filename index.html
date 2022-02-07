@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Moralis SDK code -->
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <title>First Dapp</title>
+</head>
+<body>
+    <div class="profile">
+        <span class="addr">User Address</span>
+        <p class="logout">Logged out</p>
+    </div>
+
+    <div class="container">
+        <h1>Gas Stats With Moralis</h1>
+
+        <div class="btn-section">
+            <button id="btn-login">Moralis Login</button>
+            <button id="btn-logout">Logout</button>
+            <button id="btn-get-stats">Refresh Stats</button>
+        </div>
+
+        <div>
+            <ul id="gas-stats"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

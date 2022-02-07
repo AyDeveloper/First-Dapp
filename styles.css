@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.profile {
+    position: absolute;
+    top: 2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile .addr {
+    font-size: 18px;
+    color: #33ff !important;
+    font-weight: bold;
+    border: 1px solid #33ff !important;
+    padding: 10px 5px;
+    border-radius: 12px;
+    display: none;
+    transition: all 0.3s ease-in;
+}
+
+.profile .logout {
+display: block ;
+color: crimson;
+border: 1px solid crimson;
+padding: 5px;
+}
+
+.profile .logout.remove{
+    display: none;
+}
+
+/* .profile .logout.add{
+    display: block !important;
+} */
+
+.profile .addr.add {
+display: block !important;
+}
+
+.container {
+    background-color: #333;
+    max-width: 500px;
+    padding: 100px 20px;
+    width: 90%;
+    margin: .1px auto;
+    border-radius: 15px;
+}
+
+.container h1 {
+    color: aliceblue;
+    text-align: center;
+}
+
+.btn-section {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-section button {
+    padding: 8px 10px;
+    border: 1px solid #fff;
+    outline: none;
+    cursor: pointer;
+}
